@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 LIST_OF_CHARS = { '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E', '..-.' => 'F', '--.' => 'G',
                   '....' => 'H', '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L', '--' => 'M', '-.' => 'N',
                   '---' => 'O', '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T', '..-' => 'U',
@@ -18,7 +16,7 @@ def decode_word(str)
   chars.each do |code|
     new_word.push(decode_char(code))
   end
-  new_word.join('')
+  new_word.join
 end
 
 def decode(str)
